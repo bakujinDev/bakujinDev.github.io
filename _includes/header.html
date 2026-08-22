@@ -1,13 +1,18 @@
 <header class="site-header">
   <div class="wrap">
-    <div class="site-brand">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <div class="mainline">
+      <div class="site-brand">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </div>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">홈</a>
+        <a href="{{ '/about/' | relative_url }}">소개</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </nav>
+    </div>
+
+    <div class="subline">
       <p class="site-tagline">{{ site.description }}</p>
     </div>
-    <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}">홈</a>
-      <a href="{{ '/about/' | relative_url }}">소개</a>
-      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-    </nav>
   </div>
 </header>

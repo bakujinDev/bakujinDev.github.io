@@ -66,18 +66,23 @@ a:hover {
 
 .site-header .wrap {
   display: flex;
+  flex-direction: column;
+}
+
+.site-header .mainline {
+  display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
 }
 
+.site-header .subline {
+  margin-top: 6px;
+}
+
 .site-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 0;
-  max-width: 420px;
+  flex: 1;
 }
 
 .site-title {
