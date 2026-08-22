@@ -70,6 +70,12 @@ a:hover {
   gap: 12px;
 }
 
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .site-title {
   font-weight: 700;
   font-size: 1.1em;
@@ -79,6 +85,12 @@ a:hover {
 .site-title:hover {
   text-decoration: none;
   opacity: 0.75;
+}
+
+.site-tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85em;
 }
 
 .site-nav a {
