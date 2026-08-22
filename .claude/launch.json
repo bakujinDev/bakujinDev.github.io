@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\"; export GEM_HOME=\"$HOME/.gem/ruby/3.4.0\"; export PATH=\"$GEM_HOME/bin:$PATH\"; bundle exec jekyll serve --port 4000"
+      ],
+      "port": 4000
+    }
+  ]
+}

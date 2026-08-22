@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <a class="post-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <div class="post-item-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      {% if post.categories.size > 0 %}
+      <span class="post-item-categories">
+        {% for category in post.categories %}<span class="tag">{{ category }}</span>{% endfor %}
+      </span>
+      {% endif %}
+    </div>
+    {% if post.excerpt %}
+    <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
