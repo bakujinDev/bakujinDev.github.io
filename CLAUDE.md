@@ -24,6 +24,7 @@
 - 이론적 배경(예: 표준 방법론)과 직접 설계한 부분을 항상 구분해서 서술
 
 ## 작업 방식
+- 프로젝트(예: trading-agent) 단위로 글이 묶인다. `_data/projects.yml`에 프로젝트 메타(slug/name/status/blurb)를 등록하면 `/projects/` 페이지가 그 slug를 `categories`로 가진 글을 자동으로 모아 보여준다. 새 프로젝트를 시작하면 이 파일에 항목을 추가하고(`status: 진행중`), 그 프로젝트의 글에는 해당 slug를 `categories`에 넣는다. 프로젝트가 끝나면 `status`를 `완료`로 바꾼다.
 - `_locals/` = 검토 대기 중인 글 초안을 두는 폴더 (Jekyll이 안 읽음, 발행 안 됨). 검토·수정이 끝나면 `_posts/YYYY-MM-DD-slug.md`로 옮기고 나서야 발행 대상이 된다.
 - 글에 이미지가 필요하면 `assets/images/<글-slug>/` 폴더를 만들어 그 안에 둔다 (Jekyll이 `_posts/` 안의 파일은 static 파일로 안 취급해서 이미지를 못 넣음). 폴더명을 글 slug와 맞춰서, 글을 지울 때 같은 이름의 이미지 폴더도 같이 지우면 되게 한다.
 - _posts/*.md 초안을 편집·리뷰하기 전에 .claude/agents/blog-style-editor.md 체크리스트를 먼저 읽고 반영

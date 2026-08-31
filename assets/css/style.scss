@@ -257,6 +257,68 @@ a:hover {
   margin-bottom: 1em;
 }
 
+/* Projects */
+
+.project {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project:first-of-type {
+  padding-top: 0;
+}
+
+.project-name {
+  font-size: 1.25em;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.project-status {
+  font-size: 0.6em;
+  font-weight: 500;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.project-status--진행중 {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-blurb {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.project-post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-post-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project-post-list li:first-child {
+  border-top: none;
+}
+
+.project-post-list time {
+  color: var(--muted);
+  font-size: 0.88em;
+  white-space: nowrap;
+}
+
 /* Tables */
 
 .post-content table {
